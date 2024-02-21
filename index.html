@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- scripts -->
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="error-alert hide">
+        <p>Digite somente números</p>
+    </div>
+    <div class="container">
+        <main>
+            <div class="card">
+                <h1>Cálculo de IMC</h1>
+                <form id="IMC-form">
+                    <div class="form-group">
+                        <label for="weight">Peso (kg)</label>
+                        <input type="text" id="weight" name="weight" placeholder="60" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Altura (cm)</label>
+                        <input type="number" id="height" name="height" placeholder="165" required>
+                    </div>
+                </form>
+                <div class="form-group" id="button">
+                    <label for="calc-imc">Calcular IMC</label>
+                    <button type="submit" form="IMC-form"  name="calc-imc">Calcular IMC<img src="./img/Vector.svg" alt=""></button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="modal-wrapper">
+        <div class="modal-card card">
+            <h2 class="title">Seu IMC é <span class="value">valor</span></h2>
+            <p class="text">
+                text
+            </p>
+            <button class="close"><img src="./img/close.svg" alt="imagem para fechar o modal"></button>
+        </div>
+    </div>
+    
+</body>
+</html>
